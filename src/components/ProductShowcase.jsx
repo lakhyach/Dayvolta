@@ -53,8 +53,8 @@ const ProductShowcase = () => {
               whileInView={{ opacity: 1 }}
               className="max-w-lg text-sm md:text-base text-zinc-400 font-medium tracking-tight leading-relaxed"
             >
-              Engineering meets elegance in our most powerful home storage
-              solution yet.
+              Engineering meets elegance in our most advanced home energy
+              system yet.
             </motion.p>
           </div>
         </div>
@@ -82,7 +82,7 @@ const ProductShowcase = () => {
                 <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full scale-75 opacity-50" />
                 <img
                   src="/images/solar-0.png"
-                  alt="Powerwall 3"
+                  alt="Concept render of the DV-03 solar panel"
                   className="w-full h-auto max-h-[400px] md:max-h-[600px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
                 />
               </motion.div>

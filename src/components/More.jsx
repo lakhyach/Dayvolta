@@ -47,17 +47,19 @@ const More = () => {
               <span className="text-zinc-900">◆</span> Product Preview
             </div>
             <div className="flex gap-4">
-              {[1, 2].map((i) => (
+              {[
+                { src: 2, alt: "Close-up of photovoltaic solar panels reflecting a blue sky" },
+                { src: 3, alt: "Rooftop solar panel array against bright clouds" },
+              ].map(({ src, alt }) => (
                 <motion.div
-                  key={i}
+                  key={src}
                   whileHover={{ y: -5 }}
-                  className="h-32 w-32 rounded-3xl bg-zinc-100 overflow-hidden relative group cursor-pointer"
+                  className="h-32 w-32 rounded-3xl bg-zinc-100 overflow-hidden relative group"
                 >
-                  {/* <img src="..." className="object-cover w-full h-full" /> */}
-
                   <img
-                    src={`/images/solar-${i + 1}.jpg`}
-                    alt="image"
+                    src={`/images/solar-${src}.jpg`}
+                    alt={alt}
+                    loading="lazy"
                     className="object-cover size-full"
                   />
                 </motion.div>

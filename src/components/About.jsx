@@ -108,29 +108,28 @@ const About = () => {
         {/* Card 2: Visual Image with Hover Zoom */}
         <motion.div
           variants={itemVariants}
-          className="relative flex items-center justify-center rounded-[2.5rem] bg-zinc-300 overflow-hidden aspect-square lg:aspect-auto lg:min-h-[450px] group cursor-pointer"
+          className="relative flex items-center justify-center rounded-[2.5rem] bg-zinc-300 overflow-hidden aspect-square lg:aspect-auto lg:min-h-[450px] group"
         >
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 bg-zinc-400"
           >
-            {/* Replace this div with <img src="..." className="object-cover w-full h-full" /> */}
-            <img
-              src="/images/card.jpg"
-              alt="image"
-              className="object-cover size-full saturate-150"
-            />
+            <picture>
+              <source srcSet="/images/card-home-solar.webp" type="image/webp" />
+              <img
+                src="/images/card-home-solar.jpg"
+                alt="Solar panel array mounted on a tiled residential roof"
+                loading="lazy"
+                className="object-cover size-full saturate-150"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </motion.div>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="relative z-10 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl transition-all hover:bg-white/20"
-          >
+          <span className="relative z-10 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-medium text-white backdrop-blur-xl">
             Solar energy
-          </motion.button>
+          </span>
         </motion.div>
 
         {/* Card 3: Interactive Data Chart */}

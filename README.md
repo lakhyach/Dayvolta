@@ -87,7 +87,7 @@ section is its own component; sample content lives in `assets/data.jsx`.
 │     ├─ Hero.jsx          # #home
 │     ├─ About.jsx         # #about — savings + interactive chart
 │     ├─ Services.jsx      # consultation-to-power-on steps
-│     ├─ ProductShowcase.jsx # #technology — battery showcase
+│     ├─ ProductShowcase.jsx # #technology — product + spec showcase
 │     ├─ More.jsx          # #specs — system specs + previews
 │     ├─ Testimonials.jsx  # #reviews — marquee (illustrative)
 │     └─ Footer.jsx        # #contact — CTA + validated newsletter
@@ -145,7 +145,18 @@ vercel deploy --prod --yes
 Layout and concept direction inspired by the publicly shared
 ["Goreno – Solar Energy Landing Page" design on Dribbble](https://dribbble.com/shots/25005707-Goreno-Solar-Energy-Landing-Page)
 by Royhan Muhammad; this repository is an independent re-implementation,
-rebranded to Dayvolta with original code and copy. The site imagery in
-`public/images/` was included with the starting project and is used here for
-non-commercial demonstration purposes. Add a license of your choice before
-publishing if you reuse this code.
+rebranded to Dayvolta with original code and copy.
+
+### Image credits
+
+| File | Subject | Source / License |
+|------|---------|------------------|
+| `public/images/hero-home-solar.jpg` | Rooftop solar on a family home | ["a house with solar panels" by Watt A Lot](https://unsplash.com/photos/a-house-with-solar-panels-gqpuuF3a2tY) on Unsplash — [Unsplash License](https://unsplash.com/license) |
+| `public/images/card-home-solar.webp` / `.jpg` | Solar panel on a tiled residential roof | ["Solar panel on a tiled roof in a residential area" by Sergio Martins](https://unsplash.com/photos/solar-panel-on-a-tiled-roof-in-a-residential-area-cegR6cIqo_U) on Unsplash — [Unsplash License](https://unsplash.com/license) |
+| `public/images/solar-0.png`, `solar-1.jpg`, `solar-2.jpg`, `solar-3.jpg`, `avatar-*.png` | Product render, installations, reviewer avatars | Included with the starting project; used here for non-commercial demonstration purposes |
+
+The Unsplash License permits free commercial use without attribution;
+attribution is provided anyway as good practice. No watermarked, preview, or
+Unsplash+ (paywalled) assets were used.
+
+Add a license of your choice before publishing if you reuse this code.

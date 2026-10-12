@@ -6,9 +6,9 @@ import { Sun, Leaf } from "lucide-react";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden bg-zinc-900 text-white font-sans flex flex-col">
-      {/* Background Image Placeholder */}
-      <div className="absolute inset-0 z-0 bg-[url(/images/hero.jpg)] bg-cover bg-center saturate-150">
-        <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent z-10" />
+      {/* Background photo: residential rooftop solar (Unsplash License, see README credits) */}
+      <div className="absolute inset-0 z-0 bg-[url(/images/hero-home-solar.jpg)] bg-cover bg-center saturate-150">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/30 to-black/45 z-10" />
       </div>
 
       {/* 💠 Main Content Area */}
