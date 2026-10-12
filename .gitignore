@@ -27,3 +27,4 @@ dist-ssr
 
 # Stray root-level QA screenshots (README image lives in docs/)
 /*.png
+docs/_qa*.png
