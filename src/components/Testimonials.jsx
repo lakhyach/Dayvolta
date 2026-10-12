@@ -62,7 +62,7 @@ export const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16">
           <div className="rounded-full border border-zinc-200 bg-white px-6 py-2 text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-8">
-            Testimonials
+            Illustrative Reviews
           </div>
 
           <h2 className="text-4xl md:text-6xl font-medium tracking-tighter text-zinc-900 mb-6">
@@ -70,8 +70,8 @@ export const Testimonials = () => {
             <span className="text-zinc-300">globally.</span>
           </h2>
           <p className="max-w-md text-sm text-zinc-500 leading-relaxed font-medium">
-            From intuitive design to powerful features, Goreno has become an
-            essential partner for sustainable living.
+            From intuitive design to powerful features, Dayvolta is a concept
+            brand imagined for sustainable living.
           </p>
         </div>
 
@@ -89,6 +89,11 @@ export const Testimonials = () => {
             duration={18}
           />
         </div>
+
+        <p className="mt-10 text-center text-[10px] font-medium uppercase tracking-[0.25em] text-zinc-400">
+          Sample reviews created for this concept design - not real customer
+          feedback.
+        </p>
       </div>
     </section>
   );

@@ -30,7 +30,7 @@ const services = [
 
 const testimonials = [
   {
-    text: "Switching to Goreno was the best decision for our home. The Powerwall integration is seamless and the design is stunning.",
+    text: "Switching to Dayvolta was the best decision for our home. The Powerwall integration is seamless and the design is stunning.",
     imageSrc: "/images/avatar-1.png",
     name: "Jamie Rivera",
     username: "@jamietechguru00",
@@ -66,7 +66,7 @@ const testimonials = [
     username: "@rileysmith1",
   },
   {
-    text: "Clean energy shouldn't look industrial. Goreno proved that it can be a beautiful part of home architecture.",
+    text: "Clean energy shouldn't look industrial. Dayvolta proved that it can be a beautiful part of home architecture.",
     imageSrc: "/images/avatar-7.png",
     name: "Jordan Patels",
     username: "@jpatelsdesign",

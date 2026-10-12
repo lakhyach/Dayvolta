@@ -1,23 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { useRef } from "react";
 import { Plus, Zap, Shield, Sun } from "lucide-react";
 
 const ProductShowcase = () => {
-  const containerRef = useRef(null);
-
-  const features = [
-    {
-      id: 1,
-      label: "Energy Storage",
-      value: "13.5 kWh",
-      top: "25%",
-      left: "10%",
-    },
-    { id: 2, label: "Peak Power", value: "7 kW", top: "45%", right: "10%" },
-    { id: 3, label: "Efficiency", value: "90%", bottom: "25%", left: "20%" },
-  ];
-
   const specs = [
     {
       icon: <Shield size={18} />,
@@ -32,7 +17,6 @@ const ProductShowcase = () => {
   return (
     <section
       id="technology"
-      ref={containerRef}
       className="bg-white py-24 md:py-40 lg:py-48 font-sans overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -136,19 +120,22 @@ const ProductShowcase = () => {
               </span>
             </div>
 
-            <button className="w-full md:w-auto group relative overflow-hidden rounded-full bg-white px-10 py-5 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-950 transition-all hover:bg-zinc-100">
+            <a
+              href="#contact"
+              className="w-full md:w-auto group relative overflow-hidden rounded-full bg-white px-10 py-5 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-950 transition-all hover:bg-zinc-100"
+            >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 Configure System <Plus size={14} />
               </span>
-            </button>
+            </a>
           </div>
         </div>
 
         {/* Technical Attribution Footnote */}
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] font-black uppercase tracking-[0.4em] text-zinc-300 text-center">
-          <span>Model: P-03 // GORENO_LABS</span>
+          <span>Model: DV-03 // DAYVOLTA LABS</span>
           <span className="hidden md:inline">◆</span>
-          <span>Available Q3 2026</span>
+          <span>Concept preview - not a shipping product</span>
         </div>
       </div>
     </section>

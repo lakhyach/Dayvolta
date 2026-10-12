@@ -84,7 +84,7 @@ const About = () => {
             <h3 className="text-3xl font-light leading-tight">
               Design your solar system{" "}
               <span className="text-zinc-500 group-hover:text-zinc-300 transition-colors duration-500">
-                or schedule a virtual consultation with a Goreno.
+                or schedule a virtual consultation with a Dayvolta advisor.
               </span>
             </h3>
           </div>
@@ -154,7 +154,7 @@ const About = () => {
             </div>
             <div className="flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm text-[9px] font-black uppercase tracking-tighter border border-zinc-100">
               <div className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />{" "}
-              Live Metrics
+              Sample Metrics
             </div>
           </div>
 

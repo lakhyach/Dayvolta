@@ -19,10 +19,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[110px] md:text-[24vw] font-bold leading-[0.75] tracking-tighter text-white/80 relative"
+            className="text-[64px] md:text-[20vw] font-bold leading-[0.75] tracking-tighter text-white/80 relative"
           >
-            Goreno{" "}
-            <sup className="text-lg md:text-2xl 2xl:text-3xl absolute md:top-5 lg:top-10 lg:right-40 2xl:right-0 2xl:top-20">
+            Dayvolta{" "}
+            <sup className="text-lg md:text-2xl 2xl:text-3xl absolute md:top-5 lg:top-10 lg:right-20 2xl:right-0 2xl:top-20">
               ®
             </sup>
           </motion.h1>

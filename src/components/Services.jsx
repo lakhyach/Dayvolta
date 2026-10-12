@@ -26,10 +26,11 @@ const Services = () => {
           viewport={{ once: true }}
           className="max-w-4xl text-3xl md:text-5xl font-medium leading-[1.15] tracking-tight text-zinc-900"
         >
-          With half a million solar installations to date, Goreno takes care of
-          all the details for you, from order to power on.{" "}
+          From the first consultation to power-on, Dayvolta handles every
+          detail for you.{" "}
           <span className="text-zinc-400">
-            Schedule a virtual consultation with a Goreno Advisor to learn more.
+            Schedule a virtual consultation with a Dayvolta Advisor to learn
+            more.
           </span>
         </motion.h2>
 

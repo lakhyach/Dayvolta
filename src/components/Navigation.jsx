@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Settings, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaSolarPanel } from "react-icons/fa";
 
+import Logo from "./Logo";
 import { navLinks } from "../assets/data";
 
 const Navigation = () => {
@@ -56,13 +56,9 @@ const Navigation = () => {
           <a
             href="#home"
             className="flex cursor-pointer items-center"
-            aria-label="Goreno home"
+            aria-label="Dayvolta home"
           >
-            <FaSolarPanel size={24} />{" "}
-            <span className="ml-1 text-lg tracking-tighter uppercase">
-              Goreno
-            </span>{" "}
-            <sup className="text-xs ml-1">®</sup>
+            <Logo sup />
           </a>
 
           {/* DESKTOP LINKS */}
@@ -124,7 +120,7 @@ const Navigation = () => {
           >
             {/* Background Watermark */}
             <div className="absolute top-20 -right-20 text-[25vh] font-black text-white/5 pointer-events-none rotate-90 origin-top-right">
-              GORENO
+              DAYVOLTA
             </div>
 
             <div className="flex flex-col gap-4">
@@ -153,7 +149,7 @@ const Navigation = () => {
                   <span className="text-[8px] font-black uppercase tracking-widest text-zinc-500">
                     Contact
                   </span>
-                  <p className="text-xs font-medium">hello@goreno.tech</p>
+                  <p className="text-xs font-medium">hello@dayvolta.com</p>
                 </div>
                 <div className="flex flex-col gap-2">
                   <span className="text-[8px] font-black uppercase tracking-widest text-zinc-500">

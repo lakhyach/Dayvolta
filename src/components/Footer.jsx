@@ -11,6 +11,8 @@ import {
   Youtube,
 } from "lucide-react";
 
+import Logo from "./Logo";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -32,9 +34,16 @@ const Footer = () => {
   };
 
   const footerLinks = {
-    Company: ["About us", "Career", "Contact"],
-    Product: ["Solar", "Vehicle Recalls"],
-    Resources: ["News", "Press"],
+    Company: [
+      { label: "About", href: "#about" },
+      { label: "Technology", href: "#technology" },
+      { label: "Contact", href: "#contact" },
+    ],
+    Product: [
+      { label: "Solar", href: "#home" },
+      { label: "System Specs", href: "#specs" },
+      { label: "Reviews", href: "#reviews" },
+    ],
   };
 
   const socialLinks = [
@@ -56,17 +65,18 @@ const Footer = () => {
               className="text-3xl md:text-5xl font-light leading-tighter tracking-tight mb-10"
             >
               Design your solar system or schedule a virtual consultation with a{" "}
-              <span className="text-zinc-500 italic">Goreno Advisor</span> to
+              <span className="text-zinc-500 italic">Dayvolta Advisor</span> to
               learn more.
             </motion.h2>
 
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              href="mailto:hello@dayvolta.com"
               className="flex items-center gap-3 rounded-full border border-white/20 px-8 py-4 text-xs cursor-pointer uppercase tracking-[0.2em] transition-all hover:bg-white hover:text-black"
             >
               Order now <ArrowRight size={16} />
-            </motion.button>
+            </motion.a>
           </div>
 
           <div className="flex flex-col gap-6">
@@ -75,12 +85,12 @@ const Footer = () => {
             </span>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map((social) => (
-                <button
+                <div
                   key={social.name}
-                  className="flex items-center gap-2 rounded-full bg-zinc-900 border border-zinc-800 px-5 py-2.5 text-[10px] cursor-pointer uppercase tracking-widest transition-all hover:bg-zinc-800 hover:border-zinc-700"
+                  className="flex items-center gap-2 rounded-full bg-zinc-900 border border-zinc-800 px-5 py-2.5 text-[10px] uppercase tracking-widest"
                 >
                   {social.icon} {social.name}
-                </button>
+                </div>
               ))}
             </div>
           </div>
@@ -89,7 +99,7 @@ const Footer = () => {
         <div className="h-[1px] w-full bg-white/10 mb-20" />
 
         {/* Bottom Section: Links & Newsletter */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24">
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category} className="flex flex-col gap-6">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500">
@@ -97,12 +107,12 @@ const Footer = () => {
               </span>
               <ul className="flex flex-col gap-4">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -156,19 +166,12 @@ const Footer = () => {
         </div>
 
         {/* Legal Row */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-600">
-          <p>© {currentYear} Copyright Goreno Inc.</p>
-          <div className="flex gap-8 mt-4 md:mt-0">
-            <a href="#" className="hover:text-zinc-300">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-zinc-300">
-              Legal
-            </a>
-            <a href="#" className="hover:text-zinc-300">
-              Cookie Settings
-            </a>
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-600">
+          <Logo sup={false} />
+          <p className="text-center md:text-right">
+            © {currentYear} Dayvolta - concept portfolio project. Product
+            metrics, reviews and availability shown are illustrative.
+          </p>
         </div>
       </div>
     </footer>

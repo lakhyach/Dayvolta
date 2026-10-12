@@ -35,7 +35,7 @@ const More = () => {
               transition={{ delay: 0.2 }}
               className="max-w-md text-sm leading-relaxed text-zinc-500 mb-12"
             >
-              Goreno uses solar panels that offer a sleek and modern take on
+              Dayvolta uses solar panels that offer a sleek and modern take on
               traditional panels. With our proprietary mounting hardware, panels
               can be installed close to your roof.
             </motion.p>
@@ -78,9 +78,12 @@ const More = () => {
               <h3 className="text-4xl font-light tracking-tight leading-none">
                 Solar Energy <br /> Design
               </h3>
-              <button className="rounded-full border border-white/20 px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
+              <a
+                href="#technology"
+                className="rounded-full border border-white/20 px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+              >
                 View Model
-              </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
@@ -107,9 +110,12 @@ const More = () => {
                 Solar Energy Features
               </span>
             </div>
-            <button className="rounded-full bg-black px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-white transition-transform group-hover:scale-105">
+            <a
+              href="#about"
+              className="rounded-full bg-black px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-white transition-transform group-hover:scale-105"
+            >
               View Features
-            </button>
+            </a>
           </div>
 
           {/* Warranty Card */}
@@ -120,24 +126,24 @@ const More = () => {
             </span>
           </div>
 
-          {/* Slider Controls */}
-          <div className="mt-8 flex items-center justify-between px-4">
-            <button className="h-12 w-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-50 transition-colors">
+          {/* Carousel indicator - decorative preview marker */}
+          <div className="mt-8 flex items-center justify-between px-4" aria-hidden="true">
+            <div className="h-12 w-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400">
               <ChevronLeft size={20} />
-            </button>
+            </div>
 
             <div className="flex gap-2">
               {[1, 2, 3, 4].map((dot, i) => (
                 <div
                   key={i}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${i === 2 ? "w-4 bg-zinc-900" : "w-1.5 bg-zinc-200"}`}
+                  className={`h-1.5 rounded-full ${i === 2 ? "w-4 bg-zinc-900" : "w-1.5 bg-zinc-200"}`}
                 />
               ))}
             </div>
 
-            <button className="h-12 w-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-50 transition-colors">
+            <div className="h-12 w-12 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400">
               <ChevronRight size={20} />
-            </button>
+            </div>
           </div>
         </div>
       </div>
