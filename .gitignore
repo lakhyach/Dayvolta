@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Stray root-level QA screenshots (README image lives in docs/)
+/*.png
