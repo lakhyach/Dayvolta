@@ -30,3 +30,4 @@ dist-ssr
 docs/_qa*.png
 
 /candidate-*
+/qa-live-*
